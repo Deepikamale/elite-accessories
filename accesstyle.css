@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1e2a38;
+  color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('bgaccessories.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.accessories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.accessories-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.accessories-card:hover {
+  transform: translateY(-5px);
+}
+
+.accessories-card img {
+  width: 100%;
+  display: block;
+}
+
+.accessories-card h3 {
+  margin: 15px 0 10px;
+  color: #1e2a38;
+}
+
+.accessories-card p {
+  padding: 0 15px 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.accessories-card .price {
+  display: block;
+  background: #1e2a38;
+  color: white;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1e2a38;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}

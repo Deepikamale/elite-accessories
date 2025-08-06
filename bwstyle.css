@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #1e2a38;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('bgbw.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.bags-watches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.bags-card {
+  background: white;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.watches-card {
+  background: white;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.bags-watches-card:hover {
+  transform: translateY(-5px);
+}
+
+.bags-watches-card img {
+  width: 500px;
+  height: 500px;
+}
+
+.b-card h3 {
+  margin: 15px 0 10px;
+  color: #1e2a38;
+}
+
+.bags-watches-card p {
+  padding: 0 15px 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.bags-watches-card .price {
+  display: block;
+  background: #1e2a38;
+  color: white;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e2a38;
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .bags-watches {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Stay | Star Hotels</title>
+  <link rel="stylesheet" href="onlinebooking.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Elite Accessories</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="bags-watches.html">Bags-Watches</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="active">Booking</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Keep Ordering</h2>
+    <p>Enjoy your wishlist and shopping in Elite</p>
+  </section>
+
+
+  <section class="booking-container">
+    <h3>Order Details</h3>
+    <form class="booking-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Your Phone" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="orderin">Order-In Date</label>
+        <input type="date" id="orderin" name="orderin" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="orderkout">Order-Out Date</label>
+        <input type="date" id="orderout" name="orderout" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="accessories">Product</label>
+        <select id="accessories" name="Accessories" required>
+          <option value="">Select Number of Accessories</option>
+          <option value="1">Earrings</option>
+          <option value="2">Rings</option>
+          <option value="3">Bangles</option>
+          <option value="4+">4+ accessories</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="requests">Comments</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Any special comments..."></textarea>
+      </div>
+
+      <a href="home.html" class="btn">Confirm Order</a>
+    </form>
+  </section>
+
+  <footer>
+    <p>© Elite Accessories, All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
